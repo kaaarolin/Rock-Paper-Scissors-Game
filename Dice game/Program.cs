@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            int playerRandomNum;
+            
             int enemyRandomNum;
 
             int playerPoints = 0;
@@ -14,12 +14,10 @@
             
             for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine("Press any key to roll the dice");
+                Console.WriteLine("Please write a number between 1 and 7: ");
+                int playerRandomNum = int.Parse(Console.ReadLine());
 
                 Console.ReadKey();
-
-                playerRandomNum = random.Next(1, 7);
-                Console.WriteLine("You rolled a: " + playerRandomNum);
 
                 Console.WriteLine("...");
                 System.Threading.Thread.Sleep(1000);
